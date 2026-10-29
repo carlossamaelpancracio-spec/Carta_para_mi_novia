@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f7e9e7">
+<title>El amor y la revolución no son para tibios</title>
+<style>
+:root{--paper:#fffaf5;--rose:#d88791;--deep:#754653;--ink:#49383b;--blush:#f4d9dc;--gold:#c8a56a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Georgia,"Times New Roman",serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.18;background-image:radial-gradient(#c68b8f .7px,transparent .7px);background-size:12px 12px;z-index:-1}
+a{color:inherit}.wrap{width:min(980px,92vw);margin:auto}.hero{min-height:86vh;display:flex;align-items:center;justify-content:center;text-align:center;position:relative;padding:60px 0}
+.kicker{letter-spacing:.22em;text-transform:uppercase;font:11px Arial,sans-serif;color:var(--rose)}h1{font-size:clamp(3rem,10vw,6.7rem);line-height:.92;font-weight:normal;color:var(--deep);margin:20px 0}h1 em{font-weight:normal;color:var(--rose)}.sub{font-size:1.15rem;line-height:1.7;max-width:520px;margin:22px auto;color:#785d61}
+.stamp{display:inline-block;border:1px solid #e4bdc1;border-radius:100px;padding:12px 18px;color:var(--deep);font:12px Arial,sans-serif;letter-spacing:.08em}
+.float-heart{position:absolute;color:#d98b9b;animation:float 5s ease-in-out infinite;font-size:22px}.h1{left:10%;top:23%}.h2{right:11%;top:31%;animation-delay:1s}.h3{left:17%;bottom:19%;animation-delay:2s}.h4{right:16%;bottom:16%;animation-delay:.7s}
+@keyframes float{0%,100%{transform:translateY(0) rotate(-8deg)}50%{transform:translateY(-16px) rotate(8deg)}}
+section{padding:70px 0}.section-title{text-align:center;font-size:clamp(2rem,6vw,3.3rem);font-weight:normal;color:var(--deep);margin:0 0 12px}.section-intro{text-align:center;max-width:540px;line-height:1.7;color:#80696b;margin:0 auto 35px}
+.counter{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;max-width:620px;margin:28px auto}.unit{background:#fff;border:1px solid #f0d9d8;border-radius:18px;padding:20px 8px;text-align:center;box-shadow:0 8px 25px #8d51520b}.num{font-size:clamp(1.8rem,6vw,3rem);color:var(--rose)}.label{font:10px Arial,sans-serif;letter-spacing:.13em;text-transform:uppercase;color:#967579;margin-top:5px}
+.envelope-area{text-align:center;padding-top:25px}.envelope{position:relative;width:min(310px,78vw);height:195px;margin:45px auto 25px;border:0;background:transparent;cursor:pointer;perspective:800px;filter:drop-shadow(0 15px 15px #6e3b3b18)}
+.env-back{position:absolute;inset:0;background:#e9bfc4;border-radius:5px}.env-front{position:absolute;inset:0;background:#f2d4d5;clip-path:polygon(0 0,50% 56%,100% 0,100% 100%,0 100%);border-radius:5px}.env-flap{position:absolute;inset:0;background:#d99aa5;clip-path:polygon(0 0,100% 0,50% 61%);transform-origin:top;transition:transform .7s;z-index:3}.env-letter{position:absolute;left:8%;width:84%;height:82%;bottom:7%;background:#fffaf1;border:1px solid #e8d5c7;transition:transform .7s,bottom .7s;z-index:2;padding:18px 10px;color:#9d6870;font-size:24px}.envelope.open .env-flap{transform:rotateX(180deg);z-index:1}.envelope.open .env-letter{transform:translateY(-90px);bottom:20%;}.seal{position:absolute;z-index:4;top:44%;left:calc(50% - 20px);width:40px;height:40px;background:var(--deep);border-radius:50%;display:grid;place-items:center;color:white;font-size:19px;transition:opacity .3s}.envelope.open .seal{opacity:0}.hint{font:11px Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#a77a80}
+.letter{display:none;max-width:690px;margin:40px auto 0;padding:clamp(24px,6vw,54px);background:#fffdf8;border:1px solid #ead8cc;box-shadow:0 20px 50px #6e3b3b0d;line-height:1.95;font-size:1.1rem;white-space:pre-line}.letter.show{display:block;animation:rise .7s ease}@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}.signature{font-style:italic;color:var(--rose);font-size:1.4rem;margin-top:28px}
+.collage{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:115px;gap:12px}.photo{position:relative;border:8px solid white;border-bottom-width:24px;box-shadow:0 8px 22px #59333a12;overflow:hidden;display:flex;align-items:center;justify-content:center;text-align:center;color:#8c6269;background:linear-gradient(135deg,#f8dfe0,#f8efe2);font-size:2rem}.photo:nth-child(1){grid-column:span 3;grid-row:span 2;transform:rotate(-2deg)}.photo:nth-child(2){grid-column:span 3;transform:rotate(2deg);background:linear-gradient(135deg,#e7dfe9,#f6d8d7)}.photo:nth-child(3){grid-column:span 2;transform:rotate(1deg);background:linear-gradient(135deg,#f7e7d4,#e8cbd0)}.photo:nth-child(4){grid-column:span 2;transform:rotate(-2deg);background:linear-gradient(135deg,#f1d5dc,#e8e5d7)}.photo:nth-child(5){grid-column:span 2;transform:rotate(2deg);background:linear-gradient(135deg,#e4e3d5,#f4d6d7)}.photo img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}.photo span{font:11px Arial,sans-serif;letter-spacing:.04em;position:relative;padding:12px;background:#fffaf0b8;border-radius:8px}.caption{text-align:center;font-style:italic;color:#977579;margin:28px auto 0}
+.memories{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.memory{background:#fff;border:1px solid #f0dddd;border-radius:18px;padding:23px;min-height:170px}.memory .icon{font-size:24px}.memory h3{font-size:1.2rem;font-weight:normal;color:var(--deep);margin:12px 0 8px}.memory p{font-size:.98rem;line-height:1.65;color:#82696b;margin:0}
+.song-card{max-width:600px;margin:auto;background:#fff;border:1px solid #efd8d8;border-radius:22px;padding:25px;display:flex;align-items:center;gap:18px;box-shadow:0 15px 40px #784c4c0b}.vinyl{width:76px;height:76px;flex:0 0 76px;border-radius:50%;background:repeating-radial-gradient(circle,#5e424b 0 2px,#392a32 3px 5px);display:grid;place-items:center;color:#f2cbd0;animation:spin 8s linear infinite}.vinyl:after{content:"♡";background:#d88791;border-radius:50%;width:24px;height:24px;display:grid;place-items:center;color:white}@keyframes spin{to{transform:rotate(360deg)}}.song-card h3{margin:0 0 7px;font-size:1.3rem;font-weight:normal;color:var(--deep)}.song-card p{margin:0 0 12px;color:#8e7376;font-size:.92rem}.song-link{display:inline-block;border-radius:99px;background:var(--deep);color:white;text-decoration:none;padding:10px 15px;font:12px Arial,sans-serif}
+footer{text-align:center;padding:60px 15px 75px;color:#9d777d;font-size:.95rem}footer .big{font-size:2.2rem;color:var(--rose);margin-bottom:12px}
+@media(max-width:600px){.hero{min-height:76vh}.float-heart{font-size:17px}.counter{gap:6px}.unit{padding:16px 3px}.label{font-size:8px}.collage{grid-auto-rows:90px;gap:8px}.photo{border-width:5px;border-bottom-width:18px}.photo span{font-size:9px}.memories{grid-template-columns:1fr}.memory{min-height:auto}.song-card{padding:18px;gap:13px}.vinyl{width:58px;height:58px;flex-basis:58px}.letter{font-size:1rem}}
+</style>
+</head>
+<body>
+<header class="hero wrap">
+  <span class="float-heart h1">♡</span><span class="float-heart h2">✧</span><span class="float-heart h3">♡</span><span class="float-heart h4">✿</span>
+  <div>
+    <div class="kicker">un pequeño rincón de nosotros</div>
+    <h1>El amor y la revolución no son para tibios</h1>
+    <p class="sub">de las miles millones de personas en las que te pudiste fijar y fue en mi ay no te digo que tu te caiste de chiquita amor jsjs.</p>
+    <span class="stamp">DESDE EL 02 · 08 · 2025</span>
+  </div>
+</header>
+<main>
+<section class="wrap" id="tiempo">
+  <h2 class="section-title">Nuestro tiempo ♡</h2>
+  <p class="section-intro">Y lo que falta para que te liberes de mi va a estar cañon eh esto no es nadita.</p>
+  <div class="counter" aria-label="Tiempo juntos">
+    <div class="unit"><div class="num" id="days">—</div><div class="label">días</div></div>
+    <div class="unit"><div class="num" id="hours">—</div><div class="label">horas</div></div>
+    <div class="unit"><div class="num" id="minutes">—</div><div class="label">minutos</div></div>
+    <div class="unit"><div class="num" id="seconds">—</div><div class="label">segundos</div></div>
+  </div>
+</section>
+<section class="wrap envelope-area" id="carta">
+  <h2 class="section-title">Algo que quiero decirte</h2>
+  <p class="section-intro">Hay cosas que quiero que puedas volver a leer cada vez que necesites recordar cuánto te quiero.</p>
+  <button class="envelope" id="envelope" aria-label="Abrir la carta">
+    <div class="env-back"></div><div class="env-letter">Para mi niña,<br>con todo mi corazón ♡</div><div class="env-front"></div><div class="env-flap"></div><div class="seal">♡</div>
+  </button>
+  <div class="hint" id="hint">toca el sobre para abrir tu carta</div>
+  <article class="letter" id="letter">
+  Querida Xime, me dijiste que escribiera algo inmemorable, así que aquí está...
+Quiero dejarte por escrito uno de los recuerdos más bonitos de mi vida: la primera vez que te vi.
+
+Recuerdo muy bien ese día en el accionamiento, cuando nos cruzamos en Puerta 6 y te ofrecí agua. Desde ese momento, mi mente se enfocó en aquella encapuchada de ojos y cuerpo hermosos. Después, por alguna razón, Dios o el destino me puso contigo en Puerta Principal, y empezamos a hablar de todo y de nada. No sabes cuánto agradezco que te hayas quedado ese día y que después buscaras mi Instagram.
+
+Aunque, pensándolo bien, ese día tú solita te condenaste, JAJAJAJA, porque yo no me voy hasta que tú me lo permitas o hasta que Dios me dé vida. ❤️‍🩹
+
+De verdad, muchas gracias por permitirme estar a tu lado día con día y por dejarme acompañarte en tus momentos más altos y también en los más bajos. Gracias por ayudarme las veces que más lo necesitaba, por ser ese pilar gracias al cual no se cayó todo alv. Gracias por las veces que me alimentaste cuando no tuve, por cada detalle tan hermoso que has tenido conmigo y por todos esos pequeños gestos que quizá para ti fueron simples, pero que para mí significaron muchísimo.
+
+Quiero que sepas que siempre voy a conservar cada detalle tuyo, especialmente todos y cada uno de los pétalos de flores que me has dado. Guárdame esto en la memoria: algún día serán un cachito de confeti cuando entres al altar con un vestido igual de wooow que tú. Y yo voy a estar ahí, viéndote como si todavía fuera aquel muchacho que se quedó pensando en la encapuchada de Puerta 6. Porque, aunque pasen los años, creo que nunca voy a dejar de mirarte con esos mismos ojos. 💗
+
+Gracias por todos los momentos felices que me has regalado, pero también por aquellos en los que pude secarme las lágrimas con tu ropa. Gracias por acompañarme cuando murió mi tata. Si no hubiera sido por ti, probablemente me habría dado un pinche patatús o habría terminado en coma etílico. No sé si alguna vez te he explicado cuánto significó para mí tenerte conmigo en uno de los momentos más difíciles de mi vida, pero de verdad nunca voy a olvidar que estuviste ahí.
+
+Gracias por continuar conmigo a pesar de mis actitudes de niño, por enseñarme tantas cosas de esta vida y por hacerme ver muchas cosas de una manera diferente. Gracias por los mensajes lindos, las cartas, los poemas y las historias que me mandabas. Gracias por nuestros hijos y por los que me darás en un futuro, JSJSJSJSJS. 🫶🏻
+
+Y así como te agradezco tantas cosas, también quiero pedirte perdón.
+
+Perdón por no ser perfecto, por mis celos, por mis ataques de idiotez y por las veces en las que hago tanta mamada que hasta llego a dar un poco de pena. Créeme que nunca lo hago con la intención de hacerte pasar vergüenza ni de lastimarte. A veces simplemente sale ese niño chiquito, con su paleta derretida, que se siente tan seguro, feliz e ilusionado al estar con una niña tan increíble como tú.
+
+No sabes cuántas cosas has ayudado a sanar en mí que tú nunca dañaste. ❤️‍🩹
+
+Siempre vas a ser ese curita en mi corazón. Es increíble pensar en todos esos lugares de mi cuerpo que tanto odiaba y que, con un beso tuyo, terminaban convirtiéndose en mis favoritos. No sé cómo explicarte lo bonito que es sentirme querido por ti de esa manera, cómo puedes hacerme sentir mejor sin siquiera darte cuenta y cómo, poco a poco, has conseguido que me mire con un poquito más de cariño.
+
+Gracias, mi niña. Gracias por todo.
+
+Gracias por ser ese mensaje que me alegra al despertar, por ser esa última conversación que me acompaña antes de dormir y por hacerme soñar bonito. Gracias por hacerme sentir en las nubes cuando me dices «descansa». No tienes idea de lo feliz que me hace saber que existes, que coincidimos y que, entre tantas personas en este mundo, tuve la suerte de encontrarme contigo.
+
+Nunca me voy a cansar de agradecerte por todo lo que eres y por todo lo que me has permitido vivir contigo.
+
+Quiero que esta carta y este mensaje se queden para siempre. Que, pase lo que pase y sin importar cuánto cambie la vida, algún día puedas volver a leerlos y recordar cuánto te amé, cuánto agradecí tenerte conmigo y lo orgulloso y feliz que estoy de haber coincidido contigo en este camino.
+
+Y si algún día la vida nos lleva por caminos que hoy ni siquiera imaginamos, quiero que nunca dudes de algo: haber coincidido contigo ha sido una de las cosas más bonitas que me han pasado en la vida. Siempre voy a agradecer haber conocido a aquella encapuchada que un día recibió agua de un pendejo que ni se imaginaba todo lo que iba a llegar a significar para él.
+
+Te amo demasiado, Xime. Eres el amor de mi vida, mi niña, mi flaca, mi lugar bonito en medio de tanto desmadre.
+
+Gracias por elegirme, por quedarte, por quererme y por dejarme quererte.
+
+Te amo con todo lo que soy, mi niña. Gracias por existir y por hacer tan bonita mi vida. 💕
+
+
+<div class="signature">Con todo mi amor, siempre. cocho ♡</div>
+  </article>
+</section>
+<section class="wrap" id="fotos">
+  <h2 class="section-title">Pedacitos de yo y tu mi moana verga
+ 
+<div class="collage">
+  <div class="photo"><img src="Fotos/foto1.jpg" alt="Nuestro recuerdo 1"></div>
+ <p>PRUEBA DE IMAGEN</p>
+  <div class="photo"><img src="Fotos/foto2.jpg" alt="Nuestro recuerdo 2"></div>
+  <div class="photo"><img src="Fotos/foto3.jpg" alt="Nuestro recuerdo 3"></div>
+  <div class="photo"><img src="Fotos/foto4.jpg" alt="Nuestro recuerdo 4"></div>
+  <div class="photo"><img src="Fotos/foto5.jpg" alt="Nuestro recuerdo 5"></div>
+  <div class="photo"><img src="Fotos/foto6.jpg" alt="Nuestro recuerdo 6"></div>
+  <div class="photo"><img src="Fotos/foto7.jpg" alt="Nuestro recuerdo 7"></div>
+  <div class="photo"><img src="Fotos/foto8.jpg" alt="Nuestro recuerdo 8"></div>
+  <div class="photo"><img src="Fotos/foto9.jpg" alt="Nuestro recuerdo 9"></div>
+  <div class="photo"><img src="Fotos/foto10.jpg" alt="Nuestro recuerdo 10"></div>
+  <div class="photo"><img src="Fotos/foto11.jpg" alt="Nuestro recuerdo 11"></div>
+  <div class="photo"><img src="Fotos/foto12.jpg" alt="Nuestro recuerdo 12"></div>
+</div>
+
+  <p class="caption">“Qué suerte coincidir contigo en esta vida me haces tan feliz MTZ”</p>
+</section>
+<section class="wrap" id="recuerdos">
+  <h2 class="section-title">Cosas que quiero recordar
+  <div class="memories">
+    <article class="memory"><div class="icon">🌸</div><h3>Un momento feliz</h3><p>todos los diais a tu lado son los mas felices para mi pero uno de los que mas recuerdo con cariño es cuando me hiciste videollamda en el concierto de silvana estrada o cuando dibujaste dn la arena.</p></article>
+    <article class="memory"><div class="icon">🫶</div><h3>Algo que amo de ti</h3><p>La forma en que haces especiales las cosas pequeñas, sin siquiera darte cuenta y la gran persona que eres no solo amable si no que inteligente graciosa y talentosa.</p></article>
+    <article class="memory"><div class="icon">🌙</div><h3>Lo que nos espera</h3><p>Más historias, más abrazos, más lugares por conocer y muchos recuerdos por crear y no olvidsr una niña con tus ojitos y casarnos en oaxaca.</p></article>
+  </div>
+</section>
+<section class="wrap" id="cancion">
+  <h2 class="section-title">Nuestra canción</h2>
+  <p class="section-intro">Una canción para acompañar este pequeño rincón. Toca el botón para escucharla.</p>
+  <div class="song-card"><div class="vinyl" aria-hidden="true"></div><div><h3>“Te guardo”</h3><p>Silvana Estrada</p><a class="song-link" href="https://open.spotify.com/search/Te%20guardo%20Silvana%20Estrada" target="_blank" rel="noopener noreferrer">Escuchar canción ♫</a></div></div>
+</section>
+</main>
+<footer><div class="big">♡</div><p>Hecho con cariño, para mi arima hermosa.</p><p>Esta historia sigue escribiéndose, un día a la vez.</p></footer>
+<script>
+const start = new Date('2025-08-02T00:00:00');
+function updateCounter(){
+ const now=new Date(); let total=Math.max(0,now-start);
+ const days=Math.floor(total/86400000); total%=86400000;
+ const hours=Math.floor(total/3600000); total%=3600000;
+ const minutes=Math.floor(total/60000); const seconds=Math.floor((now-start)/1000)%60;
+ document.getElementById('days').textContent=days.toLocaleString('es-MX');
+ document.getElementById('hours').textContent=hours;
+ document.getElementById('minutes').textContent=minutes;
+ document.getElementById('seconds').textContent=seconds;
+}
+updateCounter();setInterval(updateCounter,1000);
+const envelope=document.getElementById('envelope');
+envelope.addEventListener('click',()=>{
+ const opened=envelope.classList.toggle('open');
+ document.getElementById('letter').classList.toggle('show',opened);
+ document.getElementById('hint').textContent=opened?'tu carta, para volver a ella cuando quieras':'toca el sobre para abrir tu carta';
+ if(opened)setTimeout(()=>document.getElementById('letter').scrollIntoView({behavior:'smooth',block:'center'}),450);
+});
+</script>
+</body>
+</html>
